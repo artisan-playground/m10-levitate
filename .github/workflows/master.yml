@@ -19,6 +19,7 @@ jobs:
           version: 'latest'
           service_account_key: ${{ env.SA }}
           project_id: ${{ env.PROJECT_ID }}
+      - run: chmod +x ./build.sh
       - run: ./build.sh levitate
       - run: gcloud auth configure-docker
       - name: Local Build
