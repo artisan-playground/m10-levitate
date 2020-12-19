@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // import Footer from './components/Footer'
 import GlobalStyle from './components/GlobalStyle'
 import NavBar from './components/Navbar'
-import TempValueContext from './contexts/TempValueContext'
+import ParkingContext from './contexts/ParkingContext'
 import Home from './pages/Home'
 import Parking from './pages/Parking'
 import Connection from './services/Connection'
@@ -23,7 +23,7 @@ const ContentWrap = styled.div`
 function App() {
   return (
     <>
-      <TempValueContext>
+      <ParkingContext>
         <Connection />
         <PageContainer>
           <Navbar />
@@ -41,7 +41,7 @@ function App() {
           </ContentWrap>
           {/* <Footer /> */}
         </PageContainer>
-      </TempValueContext>
+      </ParkingContext>
     </>
   )
 }

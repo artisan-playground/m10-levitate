@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import { ParkingContextWrapper } from '../contexts/ParkingContext'
 
 let note
+let bat = 99
 const mqtt = require('mqtt')
 const options = {
     protocol: 'mqtts',
@@ -22,18 +23,17 @@ const Connection = () => {
         note = JSON.parse(note)
         if ( topic ===  "dii/parking/Senser 1/$/command") {
             setLot1(note)
-            console.log(lot1)
         } 
         if ( topic ===  "dii/parking/Senser 2/$/command") {
             setLot2(note)
-            console.log(lot2)
         }
         if ( topic ===  "dii/parking/Senser 3/$/command") {
             setLot3(note)
-            console.log(lot3)
         }
     })
-
+    console.log(lot1)
+    console.log(lot2)
+    console.log(lot3)
     return (
         <>
         </>
