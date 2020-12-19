@@ -11,8 +11,7 @@ const GlobalStyle = createGlobalStyle`
    font-family: 'Roboto', sans-serif;
    /* font-size: 20px; */
 
-   scroll-behavior: smooth;
-   background-color: whitesmoke;
+   background-color: #000;
    box-sizing: border-box;
  }
 
