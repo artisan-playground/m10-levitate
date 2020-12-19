@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import GlobalStyle from './components/GlobalStyle'
 import NavBar from './components/Navbar'
 // import TempValueContext from './contexts/TempValueContext'
@@ -39,7 +39,7 @@ function App() {
             </Suspense>
           </Router>
         </ContentWrap>
-        {/* <Footer /> */}
+        <Footer />
       </PageContainer>
       {/* </TempValueContext> */}
     </>
