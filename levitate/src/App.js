@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import Footer from './components/Footer'
 import GlobalStyle from './components/GlobalStyle'
 import NavBar from './components/Navbar'
-// import TempValueContext from './contexts/TempValueContext'
+import ParkingContext from './contexts/ParkingContext'
 import Home from './pages/Home'
 import Parking from './pages/Parking'
-// import Connection from './services/Connection'
+import Connection from './services/Connection'
 import Navbar from './components/Navbar'
 
 const PageContainer = styled.div`
@@ -23,25 +23,25 @@ const ContentWrap = styled.div`
 function App() {
   return (
     <>
-      {/* <TempValueContext> */}
-      {/* <Connection /> */}
-      <PageContainer>
-        <Navbar />
-        <ContentWrap>
-          <GlobalStyle />
-          <Router>
-            <NavBar />
-            <Suspense fallback="...Loading please wait...">
-              <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/Parking" exact component={Parking} />
-              </Switch>
-            </Suspense>
-          </Router>
-        </ContentWrap>
-        <Footer />
-      </PageContainer>
-      {/* </TempValueContext> */}
+      <ParkingContext>
+        <Connection />
+        <PageContainer>
+          <Navbar />
+          <ContentWrap>
+            <GlobalStyle />
+            <Router>
+              <NavBar />
+              <Suspense fallback="...Loading please wait...">
+                <Switch>
+                  <Route path="/" exact component={Home} />
+                  <Route path="/Parking" exact component={Parking} />
+                </Switch>
+              </Suspense>
+            </Router>
+          </ContentWrap>
+          <Footer />
+        </PageContainer>
+      </ParkingContext>
     </>
   )
 }
