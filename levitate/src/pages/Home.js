@@ -13,7 +13,6 @@ const Title = styled.div`
 
 const GhostNavbar = styled.div`
   height: 64px;
-  width: 100vw;
   padding: 0.5rem;
 `
 
