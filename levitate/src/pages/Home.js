@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
+import Banner from '../assets/600.jpg'
+import Store from '../components/Store'
 
 const Title = styled.div`
-  height: 80vh;
-  /* padding-top: 5vh; */
-  /* img {
+  padding-top: 5vh;
+  img {
     width: 100%;
-  } */
+  }
 `
 
 const Wrapper = styled.div`
@@ -23,8 +24,15 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <Title />
-            <Wrapper />
+            <Title>
+                <h1>
+                    APARK
+                </h1>
+                <img src={Banner} />
+            </Title>
+            <Wrapper>
+                <Store />
+            </Wrapper>
         </>
     )
 }
