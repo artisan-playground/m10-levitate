@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
    /* font-size: 20px; */
 
    scroll-behavior: smooth;
-   background-color: whitesmoke;
+   background-color: #000;
    box-sizing: border-box;
  }
 
