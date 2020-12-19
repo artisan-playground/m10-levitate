@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
-import Banner from '../assets/600.jpg'
+import Banner from '../assets/Group 98.png'
 import Store from '../components/Store'
 import Recommended from '../components/Recommended'
+import Application from '../components/Application'
 
 const Title = styled.div`
   img {
@@ -17,7 +18,7 @@ const GhostNavbar = styled.div`
 `
 
 const Wrapper = styled.div`
-  padding: 2% 10%;
+  padding: 3% 10%;
   /* z-index: 1000; */
   /* img {
     position: absolute;
@@ -35,6 +36,8 @@ const Home = () => {
       </Title>
       <Wrapper>
         <Store />
+        <Recommended />
+        <Application />
       </Wrapper>
     </>
   )
