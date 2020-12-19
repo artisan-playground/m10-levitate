@@ -20,6 +20,10 @@ export const Nav = styled.nav`
 `
 
 export const NavLogo = styled.div`
+  a{
+    font-size: 30px;
+    margin: 0 20px;
+  }
   img {
     width: 3.5rem;
     padding-left: 0.5rem;
