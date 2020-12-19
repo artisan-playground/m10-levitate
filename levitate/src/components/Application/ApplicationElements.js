@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Box = styled.div`
+export const BoxApp = styled.div`
     height: 70vh;
     display: flex;
     flex-direction: row;
