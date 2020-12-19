@@ -3,12 +3,18 @@ import Navbar from '../components/Navbar'
 import styled from 'styled-components'
 import Banner from '../assets/600.jpg'
 import Store from '../components/Store'
+import Recommended from '../components/Recommended'
 
 const Title = styled.div`
-  padding-top: 5vh;
   img {
     width: 100%;
   }
+`
+
+const GhostNavbar = styled.div`
+  height: 64px;
+  width: 100vw;
+  padding: 0.5rem;
 `
 
 const Wrapper = styled.div`
@@ -21,20 +27,18 @@ const Wrapper = styled.div`
 `
 
 const Home = () => {
-    return (
-        <>
-            <Navbar />
-            <Title>
-                <h1>
-                    APARK
-                </h1>
-                <img src={Banner} />
-            </Title>
-            <Wrapper>
-                <Store />
-            </Wrapper>
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <Title>
+        <GhostNavbar />
+        <img src={Banner} />
+      </Title>
+      <Wrapper>
+        <Store />
+      </Wrapper>
+    </>
+  )
 }
 
 export default Home
