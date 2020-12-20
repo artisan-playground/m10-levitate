@@ -6,6 +6,7 @@ import Store from '../components/Store'
 import Recommended from '../components/Recommended'
 import Application from '../components/Application'
 import ScrollspyNav from 'react-scrollspy-nav'
+import dot from '../assets/Group 6.png'
 
 
 const Title = styled.div`
@@ -16,6 +17,13 @@ const Title = styled.div`
   img {
     width: 100%;
     position: absolute;
+  }
+  .dots{
+    position: absolute;
+    top: 97%;
+    left: 49.4%;
+    width: 33px;
+    z-index: 99;
   }
 `
 
@@ -50,6 +58,7 @@ const Home = () => {
         <Title>
           <GhostNavbar />
           <img src={Banner} />
+          <img className='dots' src={dot} />
           <Button href="#section_1" />
         </Title>
       </ScrollspyNav>
