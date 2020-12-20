@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import styled from 'styled-components'
 import WHITE from '../layout/WHITE'
 import WHITERow from '../layout/WHITERow'
@@ -11,6 +11,7 @@ import GOLDRow from '../layout/GOLDRow'
 import CAR from '../layout/CAR'
 import CARRow from '../layout/CARRow'
 import Status from '../assets/Group 100.png'
+import { ParkingContextWrapper } from '../contexts/ParkingContext'
 
 const GhostNavbar = styled.div`
   height: 64px;
@@ -36,7 +37,7 @@ const LOTWrapper = styled.div`
 
 const Wrapper = styled.div`
     background-color: rgba(82,95,115,1);
-    padding: 3%;
+    padding: 2.8rem;
     border-radius: 16px;
 `
 
@@ -54,6 +55,7 @@ const Image = styled.img`
 `
 
 const Parking = () => {
+    const {lot1,setLot1,lot2,setLot2,lot3,setLot3} = useContext(ParkingContextWrapper)
     return (
         <Container>
 
@@ -66,7 +68,11 @@ const Parking = () => {
                 <Wrapper>
 
                     <LOT>
-                        <GOLD NO='A1' />
+                        {lot1 === 1 ? 
+                            <CARRow />
+                        :
+                            <GOLD NO='A1' />
+                        }
                         <GOLD NO='A2' />
                         <GOLD NO='A3' />
                         <WHITE NO='A4' />
@@ -83,7 +89,11 @@ const Parking = () => {
                         <GOLDRow NO='B2' />
                         <GOLDRow NO='B3' />
                         <WHITERow NO='B4' />
-                        <WHITERow NO='B5' />
+                        {lot2 === 1 ? 
+                            <CARRow />
+                        :
+                            <WHITERow NO='B5' />
+                        }
                         <WHITERow NO='B6' />
                         <CAR />
                         <WHITERow NO='B8' />
@@ -94,7 +104,11 @@ const Parking = () => {
                     <LOT>
                         <BLUE NO='C1' />
                         <PICK NO='C2' />
-                        <PICK NO='C3' />
+                        {lot3 === 1 ? 
+                            <CARRow />
+                        :
+                            <PICK NO='C3' />
+                        }
                         <WHITE NO='C4' />
                         <WHITE NO='C5' />
                         <CARRow />
