@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const BoxApp = styled.div`
-    height: 70vh;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     background-color: #525273;
