@@ -36,7 +36,7 @@ const LOTWrapper = styled.div`
 
 const Wrapper = styled.div`
     background-color: rgba(82,95,115,1);
-    padding: 3%;
+    padding: 2.8rem;
     border-radius: 16px;
 `
 
