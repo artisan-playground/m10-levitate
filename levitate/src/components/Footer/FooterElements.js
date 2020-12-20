@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MainFooter = styled.footer`
-  padding: 0.5%;
+  padding: 16px 0 24px 0;
   position: relative;
   bottom: 0;
   display: flex;
@@ -15,7 +15,7 @@ export const MainFooter = styled.footer`
     padding: 5px;
   }
   img{
-      width: 5rem;
+      width: 4rem;
       padding-bottom: 1rem;
   }
 `

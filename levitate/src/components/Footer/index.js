@@ -1,10 +1,11 @@
 import React from 'react'
 import { MainFooter } from './FooterElements'
+import Logo from '../../assets/LogoAP.png'
 
 export const Footer = () => {
   return (
     <MainFooter>
-      <h1>LOGO</h1>
+      <img src={Logo} />
       <p>© 2020 Artisan Digital Asia</p>
     </MainFooter>
   )
