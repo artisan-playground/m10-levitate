@@ -11,6 +11,7 @@ import GOLDRow from '../layout/GOLDRow'
 import CAR from '../layout/CAR'
 import CARRow from '../layout/CARRow'
 import Status from '../assets/Group 100.png'
+import Rec from '../layout/Recommended'
 import { ParkingContextWrapper } from '../contexts/ParkingContext'
 
 const GhostNavbar = styled.div`
@@ -31,8 +32,8 @@ const LOTWrapper = styled.div`
     display: flex;
     height: 55vh;
     border-radius: 14px;
-    padding-top: 10%;
     position: relative;
+    padding: 10% 0 0 8%;
 `
 
 const Wrapper = styled.div`
@@ -64,6 +65,8 @@ const Parking = () => {
             <LOTWrapper>
 
                 <Image src={Status} />
+
+                <Rec />
 
                 <Wrapper>
 
