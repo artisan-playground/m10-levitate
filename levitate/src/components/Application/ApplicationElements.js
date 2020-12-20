@@ -6,4 +6,7 @@ export const BoxApp = styled.div`
     flex-direction: row;
     background-color: #525273;
     border-radius: 30px;
+    img{
+        width: 100%;
+    }
 `
