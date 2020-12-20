@@ -2,7 +2,6 @@ import React, {useContext} from 'react'
 import { ParkingContextWrapper } from '../contexts/ParkingContext'
 
 let note
-let bat = 99
 const mqtt = require('mqtt')
 const options = {
     protocol: 'mqtts',
