@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const BoxWrapper = styled.div`
-    background-color: rgba(255, 0, 214, 0.5);
-    border: 8px solid rgba(255, 0, 214, 1);
-    border-bottom: 0;
+    background-color: rgba(0, 71, 255, 0.5);
+    border: 8px solid rgba(0, 71, 255, 1);
+    border-top: 0;
     width: 37px;
     height: 46px;
     margin: 20px 8px;

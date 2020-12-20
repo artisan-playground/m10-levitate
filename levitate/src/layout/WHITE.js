@@ -5,9 +5,9 @@ const BoxWrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.5);
     border: 8px solid white;
     border-bottom: 0;
-    width: 2.5%;
+    width: 37px;
     height: 46px;
-    margin: 8px;
+    margin: 20px 8px;
     h1{
         color: white;
         display: flex;
