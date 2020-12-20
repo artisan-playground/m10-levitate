@@ -9,8 +9,8 @@ const BoxWrapper = styled.div`
     margin: 20px 8px;
     width: 54px;
     img{
-        width: 40px;
-        height: 46px;
+        width: 34px;
+        height: 54px;
     }
 `
 
